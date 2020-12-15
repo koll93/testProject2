@@ -1,0 +1,11 @@
+
+:host {
+  height: 100%;
+  border-right: #b7b783 2px solid;
+  padding-top: 20px;
+  padding-left: 55px;
+}
+
+:host ::ng-deep .jqx-tree {
+  border: unset !important;
+}

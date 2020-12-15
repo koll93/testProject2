@@ -1,0 +1,12 @@
+<mat-toolbar>
+  <span class="bar">
+  <span class="material-icons">thumb_up</span>
+  <span>Тестовое приложение</span>
+  <span>
+  <button mat-raised-button (click)="openDialog()">Вход</button>
+  <button mat-raised-button (click)="auth.logout()" routerLink="/home" class="lastBut">Выход</button>
+  </span>
+  </span>
+</mat-toolbar>
+
+<router-outlet></router-outlet>

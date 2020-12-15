@@ -1,0 +1,20 @@
+<h1 mat-dialog-title>Введите логин и пароль</h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Логин</mat-label>
+    <input matInput #login>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Пароль</mat-label>
+    <input type="password" matInput #password>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="rout.login(login.value, password.value); onNoClick()" cdkFocusInitial>Вход</button>
+  <button mat-button (click)="onNoClick()">Отмена</button>
+</div>
+
+
+
+
